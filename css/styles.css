@@ -3,122 +3,205 @@
   margin: 0;
   box-sizing: border-box;
   text-align: left;
-  font-family: 'Exo 2', sans-serif; }
+  font-family: "Exo 2", sans-serif;
+}
 
 body {
   background-color: #f9fafb;
-  color: #333333; }
-  body header {
-    display: flex;
-    justify-content: space-around;
-    gap: 110px;
-    margin-top: 5px; }
-    body header h1 {
-      font-weight: 900;
-      font-size: 50px;
-      color: inherit; }
-  body #toggle-button {
-    background-color: black;
-    border: none;
-    color: lightgray;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s; }
-  body .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem; }
-    body .container .sub-container {
-      margin-bottom: 2rem;
-      padding: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      background-color: lightgray;
-      transition: box-shadow 0.3s, background-color 0.3s; }
-      body .container .sub-container h2 {
-        font-size: 2rem;
-        color: gray; }
-      body .container .sub-container p,
-      body .container .sub-container ul,
-      body .container .sub-container li {
-        font-size: 1rem;
-        color: inherit; }
-  body footer {
-    display: flex;
-    justify-content: space-evenly;
-    border: dotted 3px lightgray;
-    margin-bottom: 10px;
-    font-size: 15px;
-    text-align: center;
-    padding: 2rem;
-    transition: color 0.3s, background-color 0.3s; }
-    body footer a {
-      color: gray;
-      text-decoration: none;
-      transition: color 0.3s; }
-  body ul {
-    list-style-position: inside; }
-  body.dark-mode {
-    background-color: #1e1e1e;
-    color: #e0e0e0; }
-    body.dark-mode header {
-      display: flex;
-      justify-content: space-around;
-      gap: 110px;
-      margin-top: 5px; }
-      body.dark-mode header h1 {
-        font-weight: 900;
-        font-size: 50px;
-        color: inherit; }
-    body.dark-mode #toggle-button {
-      background-color: gray;
-      border: none;
-      color: lightgray;
-      cursor: pointer;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      font-size: 1rem;
-      transition: background-color 0.3s, color 0.3s; }
-    body.dark-mode .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem; }
-      body.dark-mode .container .sub-container {
-        margin-bottom: 2rem;
-        padding: 1.5rem;
-        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-        background-color: #1e1e1e;
-        transition: box-shadow 0.3s, background-color 0.3s; }
-        body.dark-mode .container .sub-container h2 {
-          font-size: 2rem;
-          color: darkgray; }
-        body.dark-mode .container .sub-container p,
-        body.dark-mode .container .sub-container ul,
-        body.dark-mode .container .sub-container li {
-          font-size: 1rem;
-          color: inherit; }
-    body.dark-mode footer {
-      display: flex;
-      justify-content: space-evenly;
-      border: dotted 3px lightgray;
-      margin-bottom: 10px;
-      font-size: 15px;
-      text-align: center;
-      padding: 2rem;
-      transition: color 0.3s, background-color 0.3s; }
-      body.dark-mode footer a {
-        color: darkgray;
-        text-decoration: none;
-        transition: color 0.3s; }
-    body.dark-mode ul {
-      list-style-position: inside; }
+  color: #333333;
+}
+body header {
+  display: flex;
+  justify-content: space-around;
+  gap: 110px;
+  margin-top: 5px;
+}
+body header h1 {
+  font-weight: 900;
+  font-size: 50px;
+  color: inherit;
+}
+body #toggle-button {
+  background-color: black;
+  border: none;
+  color: lightgray;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+body .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+body .container .sub-container {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: lightgray;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+body .container .sub-container h2 {
+  font-size: 2rem;
+  color: gray;
+}
+body .container .sub-container p,
+body .container .sub-container ul,
+body .container .sub-container li {
+  font-size: 1rem;
+  color: inherit;
+}
+body footer {
+  display: flex;
+  justify-content: space-evenly;
+  border: dotted 3px lightgray;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  padding: 2rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+body footer a {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+body ul {
+  list-style-position: inside;
+}
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-mode header {
+  display: flex;
+  justify-content: space-around;
+  gap: 110px;
+  margin-top: 5px;
+}
+body.dark-mode header h1 {
+  font-weight: 900;
+  font-size: 50px;
+  color: inherit;
+}
+body.dark-mode #toggle-button {
+  background-color: gray;
+  border: none;
+  color: lightgray;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+body.dark-mode .container .sub-container {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+body.dark-mode .container .sub-container h2 {
+  font-size: 2rem;
+  color: darkgray;
+}
+body.dark-mode .container .sub-container p,
+body.dark-mode .container .sub-container ul,
+body.dark-mode .container .sub-container li {
+  font-size: 1rem;
+  color: inherit;
+}
+body.dark-mode footer {
+  display: flex;
+  justify-content: space-evenly;
+  border: dotted 3px lightgray;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  padding: 2rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+body.dark-mode footer a {
+  color: darkgray;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+body.dark-mode ul {
+  list-style-position: inside;
+}
 
 .email-link {
-  color: lightgray; }
-  .email-link:hover {
-    color: #adadad; }
+  color: lightgray;
+}
+.email-link:hover {
+  color: lightgray;
+}
+
+/* General responsive styles for mobile */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .sub-container {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .sub-container h2 {
+    font-size: 1.5rem;
+  }
+  .sub-container p,
+  .sub-container ul,
+  .sub-container li {
+    font-size: 0.9rem;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  footer a {
+    margin-top: 0.5rem;
+  }
+  #toggle-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+/* Viewport size specifically for 380px */
+@media (max-width: 380px) {
+  header h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .container,
+  .sub-container {
+    padding: 0.5rem;
+  }
+  .sub-container h2 {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

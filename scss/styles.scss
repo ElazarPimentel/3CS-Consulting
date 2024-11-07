@@ -153,6 +153,77 @@ body {
     color: $light-sub-container-bg;
     
     &:hover {
-        color: darken($light-sub-container-bg, 15%);
+        color: $light-sub-container-bg;
     }
+}
+/* General responsive styles for mobile */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column; // Colocar el título y botón en una columna
+    align-items: center;
+    gap: 20px; // Reducir el espacio entre elementos
+
+    h1 {
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  .container {
+    padding: 1rem; // Reducir el padding del contenedor principal en móvil
+  }
+
+  .sub-container {
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p,
+    ul,
+    li {
+      font-size: 0.9rem;
+    }
+  }
+
+  footer {
+    flex-direction: column; // Colocar el contenido del pie de página en columna
+    text-align: center;
+    font-size: 0.9rem;
+
+    a {
+      margin-top: 0.5rem; // Añadir espacio entre los enlaces
+    }
+  }
+
+  #toggle-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Viewport size specifically for 380px */
+@media (max-width: 380px) {
+  header {
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .container,
+  .sub-container {
+    padding: 0.5rem;
+  }
+
+  .sub-container h2 {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
 }
